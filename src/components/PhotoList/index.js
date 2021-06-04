@@ -109,7 +109,7 @@ import React, {useState} from 'react';
           <div className="flex-row">
               {currentPhotos.map((image, i) => {
                 const imgSrc = require(`../../assets/small/${category}/${i}.jpg`);
-                console.log(imgSrc);
+                //console.log(imgSrc);
                 return (
                   <img
                   src= {imgSrc.default}
