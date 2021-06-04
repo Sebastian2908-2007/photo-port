@@ -1,7 +1,8 @@
-import Gallery from './components/Gallery';
-import About from './components/About';
-import Nav from './components/Nav';
+
 import React, {useState} from "react";
+import Nav from './components/Nav';
+import About from './components/About';
+import Gallery from './components/Gallery';
 
 function App() {
   const [categories] = useState ([
@@ -27,7 +28,10 @@ setCurrentCategory={setCurrentCategory}
 currentCategory={currentCategory}
 ></Nav>
      <main>
-       <Gallery></Gallery>
+      
+       <Gallery currentCategory={currentCategory} >
+       
+       </Gallery>
        <About></About>
        </main> 
     </div>
@@ -35,3 +39,5 @@ currentCategory={currentCategory}
 }
 
 export default App;
+
+
